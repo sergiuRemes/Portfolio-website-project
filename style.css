@@ -1,0 +1,167 @@
+html {
+    height: 100vh;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #d1eddf;
+}
+body {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+  }
+                        /* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 2px solid black;
+    height: 12%;
+    align-items: center;
+}
+#logo {
+    display: inline-flex;
+}
+#cont {
+    display: inline-flex;
+    border: 5px solid forestgreen;
+    padding: 10px;
+    border-style: inherit;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: lightgreen;
+    font-weight: bold;
+    width: 5rem;
+    color: black;
+}
+#cont a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+#cont a:hover {
+    cursor: pointer;
+}
+                        /* Main */
+main {
+    display: flex;
+    height: 55%;
+    width: 100%;
+    border-bottom: 2px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 10%;
+}
+.navigation-items {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-evenly;
+    font-size: larger;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding-left: 0px;
+}
+.anchors {
+    text-decoration: none;
+}
+#magic-content {
+    display: flex;
+    width: 60%;
+    height: 90%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.magic-links {
+    display: inline-flex;
+    border: 6px solid forestgreen;
+    padding: 10px;
+    border-style: outset;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: lightgreen;
+    font-weight: bold;
+    color: black;
+    width: fit-content;
+    text-decoration: none;
+}
+.magic-links:hover :active ::after{
+    cursor: pointer;
+}
+#FSE {
+    display: flex;
+    justify-content: center;
+}
+#profile-img {
+    display: flex;
+}
+img {
+    border-radius: 120px;
+}
+#skills-tag {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+    height: 25%;
+}
+#h2skills {
+    display: inline-flex;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+.skills-logos {
+    display: inline-flex;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+}
+#skills-logo {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style-type: none;
+}
+                        /* Footer */
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0.5rem;
+    width: 100%;
+    height: 10%;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.copyright {
+    display: inline-flex;
+    padding-left: 20px;
+}
+.location {
+    display: inline-flex;
+    padding-right: 20px;
+}
