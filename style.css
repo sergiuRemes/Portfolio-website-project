@@ -85,6 +85,9 @@ nav {
     width: 100%;
     padding-left: 0px;
 }
+#hiddenTag {
+    visibility: hidden;
+}
 .anchors {
     text-decoration: none;
 }
@@ -108,7 +111,6 @@ nav {
     background-color: lightgreen;
     font-weight: bold;
     color: black;
-    width: fit-content;
     text-decoration: none;
 }
 .magic-links:hover :active ::after{
@@ -118,11 +120,16 @@ nav {
     display: flex;
     justify-content: center;
 }
+.aboutMe-parag {
+    margin: 0;
+    font-size: 1.2rem;
+}
+#loading-image {
+    border-radius: 120px;
+}
 #profile-img {
     display: flex;
-}
-img {
-    border-radius: 120px;
+    border-radius: 50px;
 }
 #skills-tag {
     width: 100%;
@@ -130,7 +137,7 @@ img {
     flex-wrap: wrap;
     flex-direction: column;
     border-bottom: 2px solid black;
-    height: 25%;
+    height: 20%;
 }
 #h2skills {
     display: inline-flex;
@@ -151,6 +158,9 @@ img {
     justify-content: space-around;
     list-style-type: none;
 }
+.images {
+    display: inline-flex;
+}
                         /* Footer */
 footer {
     display: flex;
@@ -170,3 +180,94 @@ footer {
     display: inline-flex;
     padding-right: 20px;
 }
+
+                                   /*  MEDIA QUERY   */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)  { 
+	header {
+	 align-content: center;
+		}
+	main {
+	    flex-direction: column;
+        height: 60%;
+		}
+    nav {
+        width: 17%;
+    }
+	#magic-content {
+		width: 50%;
+        padding: 0;
+		}
+    .aboutMe-parag {
+        font-size: 1rem;
+        }
+	.magic-links {
+		display: flex;
+		font-size: 0.75rem;
+        padding: 3px;
+		}
+	#profile-img {
+	    height: 340px;
+		width: 227px;
+	}
+    #skills-tag {
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+	}
+    #h2skills {
+        height: 1rem;
+    }
+  
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px)  { 
+	header {
+	    height: 10%;
+		}
+	#logo {
+		font-size: larger;
+	}
+	#cont {
+		font-size: 0.7rem;
+		padding: 0;
+	}
+	
+	#skills-tag {
+		height: 110px;
+		flex-direction: row;
+		align-content: flex-start;
+	}
+	h2 {
+	    width: 100%;
+        font-size: 1rem;
+        margin: 5px;
+        padding: 0;
+        height: 1rem;
+	}
+	.skills-logos {
+		width: 100%;
+		height: 80%;
+		display: flex;
+		flex-flow: column wrap;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#skills-logo {
+	    padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		gap: 5px 30px;
+	}
+	.images {
+		display: inline-flex;
+		height: 30px;
+		width: 30px;
+	}
+}
+	

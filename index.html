@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link href="" rel="stylesheet">
-    <link href="" rel="stylesheet">
-    <link href="" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./style.css" type="text/css" aria-disabled="true">
     <title>Portofolio website</title>
     <meta charset="UTF-8">
+    <meta name="description" content="Author: Sergiu Remes, Personal portfolio home page">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script> -->
+    <!-- <script defer src='./script.js'></script> -->
 </head>
 <body>
                         <!-- Header -->
@@ -20,51 +18,52 @@
     <main>
         <nav>
             <ul class="navigation-items">
-                <li><input type="radio" name="nav-options" id="home" value="home"><a href="#home"></a>
-                    <label id="homePage" for="home">Home</label></li>
-              <li id="amLabel"><input type="radio" name="nav-options" id="about-me" value="about-me"><a href="#about-me"></a>
+              <li id="homePage"><input type="radio" name="nav-options" id="home" value="home">
+                                    <label id="myHomePage" for="home">Home</label></li>
+              <li id="amLabel"><input type="radio" name="nav-options" id="about-me" value="about-me">
                                     <label id="amL" for="about-me">About me</label></li>
-              <li  id="eduLabel" ><input type="radio" name="nav-options" id="education" value="education"><a href="#education"></a>
+              <li  id="eduLabel" ><input type="radio" name="nav-options" id="education" value="education">
                                     <label id="eduL" for="education">Education</label></li>
-              <li id="projLabel"><input type="radio" name="nav-options" id="projects" value="projects"><a href="#projects"></a>
+              <li id="projLabel"><input type="radio" name="nav-options" id="projects" value="projects">
                                     <label id="projL" for="projects">Projects</label></li>
             </ul>
           </nav>
           <div id="magic-content">
+              <section id="homePg">
+                <h2 id="FSE">Full Stack Engineer</h2>
+                <img id="loading-image" src="./pictures/loading-FSE.webp" width="285px" height="150px" alt="graphical image - loading webpage">
+              </section>  
               <section id="aboutMe">
-                <p>Hi. I am Sergiu and I am a Codecademy Full Stack Software Engineer student. It has been almost two years since I started learning and developing IT skills and I am accumulating knowledges every day.</p><br>
-                <p>So far I am enjoying the Front End a little bit more than the Back End as I've practiced it more.</p>
+                <p class="aboutMe-parag">Hi. I am Sergiu and I am a Codecademy Full Stack Software Engineer student. It has been almost two years since I started learning and developing IT skills and I am accumulating knowledges every day.</p><br>
+                <p class="aboutMe-parag">So far I am enjoying the Front End a little bit more than the Back End as I've practiced it more.</p>
               </section>
               <section id="edu">
-                <a class="magic-links" href="./education/Certificate-21-CTFL-01090-USA.pdf" alt="ISTQB Certificate" target="_blank">ISTQB Software Tester Certificate</a><br><br>
-                <a class="magic-links" href="./education/SOFTWARE TESTER.pdf" alt="Software Tester - LinkedIn certificate" target="_blank">Software Tester - LinkedIn certificate</a><br><br>
-                <a class="magic-links" href="./education/ADVANCE YOUR SKILLS IN HTML.pdf" alt="Advanced HTML5 - LinkedIn Certification" target="_blank">HTML5 LinkedIn Certificate</a><br><br>
-                <a class="magic-links" href="./education/Introduction to Python.pdf" alt="CodeCamp introduction to Python course" target="_blank">CodeCamp introduction to Python certificate</a><br><br>
+                <a class="magic-links" href="./education/Certificate-21-CTFL-01090-USA.webp" alt="ISTQB Certificate" target="_blank">ISTQB Software Tester Certificate</a><br>
+                <a class="magic-links" href="./education/SOFTWARE-TESTER.webp TESTER.pdf" alt="Software Tester - LinkedIn certificate" target="_blank">Software Tester - LinkedIn certificate</a><br>
+                <a class="magic-links" href="./education/ADVANCE-YOUR-SKILLS-IN-HTML.webp YOUR SKILLS IN HTML.pdf" alt="Advanced HTML5 - LinkedIn Certification" target="_blank">HTML5 LinkedIn Certificate</a><br>
+                <a class="magic-links" href="./education/Introduction-to-Python.webp to Python.pdf" alt="CodeCamp introduction to Python course" target="_blank">CodeCamp introduction to Python certificate</a><br>
               </section>
               <section id="proj">
                 <p><a class="magic-links" href="https://github.com/sergiuRemes/Mixed-messages.git" role="link" alt="Fortune cookie app" aria-label="Fortune cookie app" target="_blank">Fortune cookie app generator</a></p>
                 <p><a class="magic-links" href="https://github.com/sergiuRemes/Responsive-website.git" role="link" alt="Chef's club" aria-label="Chef's club" target="_blank">Chef's club - responsive home page</a></p>
                 <p><a class="magic-links" href="https://github.com/sergiuRemes/Mysterious-Organism.git" role="link" alt="DNA mutating misterious organism" aria-label="DNA mutating misterious organism" target="_blank">DNA mutating misterious organism</a></p>
               </section> 
-              <section id="homePg">
-                  <h3 id="FSE">Full Stack Engineer</h3>
-                  <img src="./pictures/loading-screen-featured-image.jpg" width="700px" height="160px" alt="graphical image - loading webpage">
-              </section>  
           </div>
-          <div id="profile-img"><img src="./pictures/profilePicture.jpg" width="240px" height="320px" alt="profile img"></div>
+          <div id="profile-pic"><img id="profile-img" src="./pictures/profilePicture_ccexpress.webp" width="239px" height="360px" alt="profile img"></div>
     </main>
     <div id="skills-tag">
         <h2 id="h2skills">Skills</h2>
         <nav class="skills-logos">
             <ul id="skills-logo">
-                <li><img src="./pictures/HTMLLogo.f3164981f6eaf63d0e8d.png" width="50px" height="50px"></img></li>
-                <li><img src="./pictures/CSSLogo.1334cb45a7d5ad096543.png" width="50px" height="50px"></img></li>
-                <li><img src="./pictures/JSLogo.ac7a57fd9e0eed648be2.png" width="50px" height="50px"></img></li>
-                <li><img src="./pictures/nodejs.png" width="50px" height="50px"></img></li>
-                <li><img src="./pictures/git.png" width="50px" height="50px"></img></li>
-                <li><img src="./pictures/800px-Python-logo-notext.svg.png" width="50px" height="50px"></img></li>
-                <li><img src="./pictures/ReactLogo.b651ed8f9c447ce5a7ae.png" width="50px" height="50px"></img></li>
-                <li><img src="./pictures/MySQLLogo.28aee74d1a81718b22d6.png" width="50px" height="50px"></img></li>
+                <li><img class="images" src="./pictures/HTMLLogo.f3164981f6eaf63d0e8d_ccexpress.webp" width="50px" height="50px" alt="HTML5 logo"></img></li>
+                <li><img class="images" src="./pictures/CSSLogo.1334cb45a7d5ad096543_ccexpress.webp" width="50px" height="50px" alt="CSS3 logo"></img></li>
+                <li><img class="images" src="./pictures/js-logo.webp" width="50px" height="50px"alt="JS logo"></img></li>
+                <li><img class="images" src="./pictures/nodejs.webp" width="60px" height="60px" alt="NODEjs logo"></img></li>
+                <li><img class="images" src="./pictures/git.webp" width="50px" height="50px" alt="Git logo"></img></li>
+                <li><img class="images" src="./pictures/800px-Python-logo-notext.svg_ccexpress.webp" width="50px" height="50px" alt="Python logo"></img></li>
+                <li><img class="images" src="./pictures/ReactLogo.b651ed8f9c447ce5a7ae_ccexpress.webp" width="50px" height="50px" alt="React logo"></img></li>
+                <li><img class="images" src="./pictures/MySQLLogo.28aee74d1a81718b22d6_ccexpress.webp" width="50px" height="50px" alt="MySQL logo"></img></li>
+                <li><img class="images" src="./pictures/TS.webp" width="50px" height="50px" alt="TS logo"></img></li>
         <!--    <li><img></img></li>            +
                 <li><img></img></li>     MORE COMING SOON
                 <li><img></img></li>    -->  
@@ -129,5 +128,6 @@ homePage.onclick = function() {
     projects.hidden = true; 
 }
 </script>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </body>
 </html>
