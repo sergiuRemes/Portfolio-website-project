@@ -136,6 +136,11 @@ nav {
     display: flex;
     justify-content: center;
 }
+#loading-image {
+    background-image: url(./pictures/loading-FSE\ \(570x300\ px\).webp);
+    width: 570px;
+    height: 300px;
+}
 .aboutMe-parag {
     margin: 0;
     font-size: 1.2rem;
@@ -219,7 +224,7 @@ footer {
     #FSE {
         font-size: 2rem;
     }
-    .aboutMe-parag {
+     .aboutMe-parag {
         font-size: 1.2rem;
     }
     #profile-img {
@@ -268,8 +273,8 @@ footer {
         width: 358.5px;
     }
     #loading-image {
-        width: 570px;
-        height: 300px;
+       width: 570px;
+       height: 300px;
     }
     .magic-links {
         width: 90%;
@@ -317,8 +322,8 @@ footer {
         font-size: 1.5rem;
     }
     #loading-image {
-        width: 570px;
-        height: 300px;
+     width: 570px;
+     height: 300px;
     }
     .magic-links {
         font-size: large;
@@ -347,6 +352,11 @@ footer {
 		width: 50%;
         padding: 0;
 		}
+    #loading-image {
+        background-image: url(./pictures/loading-FSE\ \(285-150\ px\).webp);
+        width: 285px;
+        height: 150px;
+    }
     .aboutMe-parag {
         font-size: 1rem;
         margin-right: 10px;
@@ -420,9 +430,10 @@ footer {
     }
     #loading-image {
         display: flex;
-     /* width: 120px; */
-    /* height: 120px; */
-    }
+        background-image: url(./pictures/loading-FSE\ \(285-150\ px\).webp);
+        width: 285px;
+        height: 150px;
+     }
     #FSE {
         width: 100%;
         font-size: 1.5rem;
