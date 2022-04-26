@@ -85,9 +85,6 @@ nav {
     width: 100%;
     padding-left: 0px;
 }
-#hiddenTag {
-    visibility: hidden;
-}
 .anchors {
     text-decoration: none;
 }
@@ -101,22 +98,41 @@ nav {
     flex-wrap: wrap;
     padding: 1rem;
 }
+
 .magic-links {
-    display: inline-flex;
+    display: flex;
     border: 6px solid forestgreen;
-    padding: 10px;
+    padding: 5px;
+    margin: 35px 0;
+    width: 100%;
     border-style: outset;
     border-radius: 20px;
-    justify-content: center;
     background-color: lightgreen;
     font-weight: bold;
     color: black;
     text-decoration: none;
+    justify-content: space-between;
+    font-size: larger;
+}
+.magic-ps {
+    display: flex;
+    border: 6px solid forestgreen;
+    padding: 5px;
+    margin: 35px 0;
+    width: 102%;
+    border-style: outset;
+    border-radius: 20px;
+    background-color: lightgreen;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: larger;
 }
 .magic-links:hover :active ::after{
     cursor: pointer;
 }
 #FSE {
+    font-size: 1rem;
     display: flex;
     justify-content: center;
 }
@@ -124,10 +140,7 @@ nav {
     margin: 0;
     font-size: 1.2rem;
 }
-#loading-image {
-    border-radius: 120px;
-}
-#profile-img {
+#profile-pic {
     display: flex;
     border-radius: 50px;
 }
@@ -139,7 +152,7 @@ nav {
     border-bottom: 2px solid black;
     height: 20%;
 }
-#h2skills {
+#h3skills {
     display: inline-flex;
     justify-content: center;
     align-content: flex-start;
@@ -182,8 +195,144 @@ footer {
 }
 
                                    /*  MEDIA QUERY   */
+@media only screen and (min-width: 2560px) { 
+    html {
+        font-size: 50px;
+    }
+    #logo {
+        margin: 0;
+    }
+    #cont {
+        font-size: 1.4rem;
+        padding: 0px;
+        border: 12px solid forestgreen;
+        width: 7rem;
+        border-style: inherit;
+    }
+    nav {
+        width: 16%;
+    }
+    #magic-content {
+        padding: 0;
+        width: 55%;
+    }
+    #FSE {
+        font-size: 2rem;
+    }
+    .aboutMe-parag {
+        font-size: 1.2rem;
+    }
+    #profile-img {
+        height: 540px;
+        width: 358.5px;
+    }
+    #loading-image {
+        width: 570px;
+        height: 300px;
+    }
+    .magic-links {
+        width: 90%;
+        font-size: 1rem;
+    }
+    .magic-ps {
+        width: 90%;
+        font-size: 1rem;
+    }
+    .images {
+        width: 150px;
+        height: 150px;
+    }
+    footer {
+        font-weight: bold;
+    }
+    .copyright {
+        font-size: smaller;
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 2559px)  { 
+    html {
+        font-size: 35px;
+    }
+    nav {
+        width: 16%;
+    }
+    #logo {
+        margin: 0;
+    }
+    #magic-content {
+        padding: 0;
+        width: 55%;
+    }
+    #profile-img {
+        height: 540px;
+        width: 358.5px;
+    }
+    #loading-image {
+        width: 570px;
+        height: 300px;
+    }
+    .magic-links {
+        width: 90%;
+    }
+    .magic-ps {
+        width: 90%;
+    }
+    .images {
+        width: 100px;
+        height: 100px;
+    }
+}
 
-@media only screen and (min-width: 768px) and (max-width: 1024px)  { 
+@media only screen and (min-width: 1024px) and (max-width: 1439px)  { 
+    html {
+        font-size: 25px;
+    }
+       header {
+        display: flex;
+        align-content: center;
+    }
+    main {
+        flex-shrink: initial;
+    }
+    nav {
+        width: 20%;
+        height: 80%;
+    }
+    #magic-content {
+        width: 50%;
+        padding: 0;
+        height: 80%;
+    }
+    .aboutMe-parag {
+        font-size: 25px;
+    }
+    #profile-pic {
+        height: 80%;
+    }
+    #profile-img {
+        height: 370px;
+        width: 245.7px;
+    }
+    #FSE {
+        font-size: 1.5rem;
+    }
+    #loading-image {
+        width: 570px;
+        height: 300px;
+    }
+    .magic-links {
+        font-size: large;
+    }
+    .magic-ps {
+        font-size: large;
+    }
+    #h3skills {
+        height: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px)  { 
 	header {
 	 align-content: center;
 		}
@@ -192,7 +341,7 @@ footer {
         height: 60%;
 		}
     nav {
-        width: 17%;
+        width: 20%;
     }
 	#magic-content {
 		width: 50%;
@@ -200,30 +349,42 @@ footer {
 		}
     .aboutMe-parag {
         font-size: 1rem;
+        margin-right: 10px;
         }
 	.magic-links {
 		display: flex;
 		font-size: 0.75rem;
         padding: 3px;
+        width: 90%;
 		}
+    .magic-ps {
+        display: flex;
+        font-size: 0.75rem;
+        padding: 3px;
+        width: 95%;
+    }
 	#profile-img {
 	    height: 340px;
 		width: 227px;
 	}
     #skills-tag {
-        height: 20%;
+        height: 17%;
         display: flex;
         flex-direction: row;
 	}
-    #h2skills {
-        height: 1rem;
+    #h3skills {
+        margin: 0;
     }
   
 }
 
-
-
-@media only screen and (min-width: 320px) and (max-width: 768px)  { 
+@media only screen and (min-width: 320px) and (max-width: 767px)  { 
+    html {
+        font-size: smaller;
+    }
+    #profile-pic {
+        visibility: hidden;
+    }
 	header {
 	    height: 10%;
 		}
@@ -234,19 +395,67 @@ footer {
 		font-size: 0.7rem;
 		padding: 0;
 	}
-	
+    main {
+        margin-left: 10px;
+        margin-right: 5px;
+        font-size: medium;
+        height: 380px;
+        display: flex;
+        flex-direction: row;
+    }
+	nav {
+        display: flex;
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+    #magic-content {
+        font-size: medium;
+        padding: 0;
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    #loading-image {
+        display: flex;
+     /* width: 120px; */
+    /* height: 120px; */
+    }
+    #FSE {
+        width: 100%;
+        font-size: 1.5rem;
+        margin: 15px;
+        padding: 0;
+        height: 2rem;
+    }
+    .magic-links {
+        padding: 3px;
+        margin: 10px;
+        width: 90%;
+        font-size: small;
+        justify-content: center;
+    }
+    .magic-ps {
+        padding: 3px;
+        margin: 5px;
+        width: 90%;
+        font-size: small;
+        justify-content: center;
+    }
 	#skills-tag {
-		height: 110px;
+		height: 130px;
 		flex-direction: row;
 		align-content: flex-start;
 	}
-	h2 {
-	    width: 100%;
-        font-size: 1rem;
+    #h3skills {
+        width: 100%;
+        font-size: 1.5rem;
         margin: 5px;
         padding: 0;
         height: 1rem;
-	}
+    }
 	.skills-logos {
 		width: 100%;
 		height: 80%;
@@ -270,4 +479,3 @@ footer {
 		width: 30px;
 	}
 }
-	

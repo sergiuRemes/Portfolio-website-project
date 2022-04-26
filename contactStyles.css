@@ -92,4 +92,37 @@ section {
         flex-direction: row;
         row-gap: 30px;
     }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px)  { 
+    html {
+        font-size: 30px;
     }
+    .navigation a {
+        padding: 10px;
+        font-size: x-large;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin-left: 10px;
+    }
+}
+@media only screen and (min-width: 1440px)  { 
+    html {
+        font-size: 50px;
+    }
+    .navigation {
+        width: fit-content;
+    }
+    .navigation a {
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .img {
+        width: 150px;
+        height: 150px;
+        margin: 1.2rem;
+    }
+}
