@@ -1,9 +1,9 @@
 html {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     font-size: 20px;
     margin: 0;
     padding: 0;
-    width: 100vw;
     box-sizing: border-box;
     background-color: #d1eddf;
 }
@@ -16,6 +16,7 @@ body {
     flex-wrap: wrap;
     align-content: flex-start;
     width: 100%;
+    flex-shrink: initial;
   }
                         /* Header */
 header {
@@ -27,9 +28,11 @@ header {
     border-bottom: 2px solid black;
     height: 12%;
     align-items: center;
+    flex-shrink: initial;
 }
 #logo {
     display: inline-flex;
+    flex-shrink: initial;
 }
 #cont {
     display: inline-flex;
@@ -42,6 +45,7 @@ header {
     font-weight: bold;
     width: 5rem;
     color: black;
+    flex-shrink: initial;
 }
 #cont a {
     text-decoration: none;
@@ -68,12 +72,14 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    flex-shrink: initial;
 }
 nav {
     display: flex;
     flex-direction: row;
     height: 60%;
     width: 10%;
+    flex-shrink: initial;
 }
 .navigation-items {
     list-style-type: none;
@@ -84,6 +90,7 @@ nav {
     margin: 0;
     width: 100%;
     padding-left: 0px;
+    flex-shrink: initial;
 }
 .anchors {
     text-decoration: none;
@@ -97,6 +104,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     padding: 1rem;
+    flex-shrink: initial;
 }
 
 .magic-links {
@@ -148,6 +156,7 @@ nav {
 #profile-pic {
     display: flex;
     border-radius: 50px;
+    flex-shrink: initial;
 }
 #skills-tag {
     width: 100%;
@@ -156,6 +165,7 @@ nav {
     flex-direction: column;
     border-bottom: 2px solid black;
     height: 20%;
+    flex-shrink: initial;
 }
 #h3skills {
     display: inline-flex;
@@ -189,6 +199,7 @@ footer {
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
+    flex-shrink: initial;
 }
 .copyright {
     display: inline-flex;
@@ -199,7 +210,9 @@ footer {
     padding-right: 20px;
 }
 
+
                                    /*  MEDIA QUERY   */
+
 @media only screen and (min-width: 2560px) { 
     html {
         font-size: 50px;
