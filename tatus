@@ -1,0 +1,59 @@
+[33mcommit 5f7b723bf3976afed5fc75a0bd50edb0ea9af8ee[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: sergiuRemes <remes.sergiu@gmail.com>
+Date:   Tue May 31 18:47:36 2022 +0100
+
+    minor polish
+
+[33mcommit a5af50fd1f2b90d94e72b839dcd6d0510fd8023a[m
+Author: sergiuRemes <remes.sergiu@gmail.com>
+Date:   Tue May 31 18:24:25 2022 +0100
+
+    fixed bug
+
+[33mcommit 6d15e3ad1a37204711c6d41c013f0812303584be[m
+Author: sergiuRemes <remes.sergiu@gmail.com>
+Date:   Fri May 20 13:11:50 2022 +0100
+
+    media query v.2
+
+[33mcommit 8c38b838c2b8f8cb6f8384f55fdccba7d1577be2[m
+Author: sergiuR <sergiuRemes@users.noreply.github.com>
+Date:   Tue Apr 26 18:20:02 2022 +0100
+
+    fixed performance issue
+
+[33mcommit 0a8a54ac3b7077cbfb238c96fc72cbcceb5ced35[m
+Author: sergiuR <sergiuRemes@users.noreply.github.com>
+Date:   Tue Apr 26 17:34:44 2022 +0100
+
+    full working website
+
+[33mcommit 5253069515cbbef7ad4e02a1ccb6cf81ec15ba99[m
+Author: sergiuR <sergiuRemes@users.noreply.github.com>
+Date:   Fri Apr 22 23:45:56 2022 +0100
+
+    copy - working 768 mediaQuery
+
+[33mcommit 6dabeda7afce501020f64740c0b378e5b4f03ad4[m
+Author: sergiuR <sergiuRemes@users.noreply.github.com>
+Date:   Fri Apr 22 11:08:33 2022 +0100
+
+    fixed contact btn
+
+[33mcommit 128951307349f3becf04abeff32e690b5fc683ea[m
+Author: sergiuR <sergiuRemes@users.noreply.github.com>
+Date:   Fri Apr 22 10:45:45 2022 +0100
+
+    finished contact page
+
+[33mcommit 6021a730c9f9625062e80a1266abb612dd1ec6d5[m
+Author: sergiuR <sergiuRemes@users.noreply.github.com>
+Date:   Fri Apr 22 10:14:24 2022 +0100
+
+    fixed bug - profile pic
+
+[33mcommit f2ae2ba0862606a271763448d6bce996fde1b4f3[m
+Author: sergiuR <sergiuRemes@users.noreply.github.com>
+Date:   Thu Apr 21 20:54:30 2022 +0100
+
+    working html, javascript, css
